@@ -1,5 +1,17 @@
 # 数据安全治理
 数据安全治理
+
+数据泄密防护 DLP 
+dlp -- 识别、监测、管控
+![image](https://user-images.githubusercontent.com/7948479/222682075-50e442fa-a3ed-403a-bc68-2ecf96d0b05d.png)
+常规DLP检测技术
+基于关键字的检测
+基于正则表达式的检测
+基于字典的检测
+基于脚本的检测
+基于数据标识符的检测
+
+
 应用实践
 1、终端安全管理系统
 ![image](https://user-images.githubusercontent.com/7948479/222626659-c43be625-7b0f-4e4f-abf6-4c7a005a2db3.png)
