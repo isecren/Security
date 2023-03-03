@@ -18,7 +18,10 @@
 3、云容灾场景
 4、海量文件备份场景
 5、防勒索病毒场景
-  
+ 
+ 
+![image](https://user-images.githubusercontent.com/7948479/222626150-712443af-b89a-47f8-b1dd-49cce0e93e93.png)
+
 
 DSG评估框架
 一、数据安全战略
