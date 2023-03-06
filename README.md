@@ -1,6 +1,11 @@
 # 数据安全治理
 数据安全治理
 
+用户和实体行为分析（UEBA）
+
+
+
+
 数据泄密防护 DLP 
 dlp -- 识别、监测、管控
 ![image](https://user-images.githubusercontent.com/7948479/222682075-50e442fa-a3ed-403a-bc68-2ecf96d0b05d.png)
