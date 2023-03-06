@@ -1,6 +1,12 @@
 # 数据安全治理
 数据安全治理
 
+数据安全运维
+
+
+
+
+
 数据库安全防护
 数据库安全防护系统
 ![image](https://user-images.githubusercontent.com/7948479/223043707-4bd8f2fb-1e13-4cf0-958a-1ba9041a3d42.png)
