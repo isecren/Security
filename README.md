@@ -13,6 +13,8 @@
 ![image](https://user-images.githubusercontent.com/7948479/223399110-5c8c9f2c-7745-4451-9ce1-e2fef6ea49e6.png)
 ![image](https://user-images.githubusercontent.com/7948479/223399605-10853ef0-23dc-42fa-a25a-e4676964f35c.png)
 
+# 数据安全组织架构
+![image](https://user-images.githubusercontent.com/7948479/223407628-23986eac-e0b8-4172-849d-8fe554e662ba.png)
 
 
 成熟数据安全技术
