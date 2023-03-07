@@ -9,6 +9,9 @@
 ![image](https://user-images.githubusercontent.com/7948479/223390203-346d1fe9-f3dc-4e4a-adea-640b9e2112b4.png)
 # 能力支撑推动治理框架设计
 ![image](https://user-images.githubusercontent.com/7948479/223395162-13960cef-b1b9-4e12-857c-3101bbc0eb93.png)
+# 数据安全治理整体框架
+![image](https://user-images.githubusercontent.com/7948479/223399110-5c8c9f2c-7745-4451-9ce1-e2fef6ea49e6.png)
+![image](https://user-images.githubusercontent.com/7948479/223399605-10853ef0-23dc-42fa-a25a-e4676964f35c.png)
 
 
 
