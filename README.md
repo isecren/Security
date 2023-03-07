@@ -1,6 +1,17 @@
 # 数据安全治理
 数据安全治理
 
+
+
+
+
+数据安全治理理念
+![image](https://user-images.githubusercontent.com/7948479/223390203-346d1fe9-f3dc-4e4a-adea-640b9e2112b4.png)
+能力支撑推动治理框架设计
+![image](https://user-images.githubusercontent.com/7948479/223395162-13960cef-b1b9-4e12-857c-3101bbc0eb93.png)
+
+
+
 成熟数据安全技术
 以数据为中心的审计和防护-DCAP
 数据库审计和保护 DAP
