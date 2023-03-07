@@ -16,6 +16,11 @@
 访问源信息
 访问对象信息
 其他访问信息
+身份认证和访问管理  IAM
+技术架构
+![image](https://user-images.githubusercontent.com/7948479/223386967-27ab6bb9-9afc-46f6-b98d-d204a8c4929d.png)
+访问流程
+![image](https://user-images.githubusercontent.com/7948479/223387250-843c295b-1b51-4695-96cb-4f8be14d1126.png)
 
 
 
