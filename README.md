@@ -15,6 +15,18 @@
 后置代理加密
 数据库透明加密
 ![image](https://user-images.githubusercontent.com/7948479/223370466-5763cb00-252f-4a16-b8f5-c907998fbeef.png)
+![image](https://user-images.githubusercontent.com/7948479/223370686-f49a70b5-212a-4995-b22b-ba2ea726db98.png)
+![image](https://user-images.githubusercontent.com/7948479/223370748-cd8d0833-7991-4acf-8c74-9170ff638d81.png)
+文件系统加密
+![image](https://user-images.githubusercontent.com/7948479/223370863-6a78f193-76e9-4ed1-9074-c7e617a63aaf.png)
+磁盘加密
+不同加密技术路线比较
+![image](https://user-images.githubusercontent.com/7948479/223371098-d96060ab-1aa2-41b6-967e-c4be192e6ae3.png)
+统一密码基础设施
+需求背景
+体系架构
+![image](https://user-images.githubusercontent.com/7948479/223371327-ff47c089-f213-41d4-99c2-4f60c6249d25.png)
+作用和价值
 
 
 
