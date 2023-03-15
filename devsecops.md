@@ -28,40 +28,40 @@ Threat dragon采用STRIDE威胁分析方法。STRIDE从攻击者角度，把威�
 本地源代码安全检测--对于java项目来说，可以采用安全扫描插件FindSecurityBugs
 
 
-SAST源代码安全扫描
+# SAST源代码安全扫描
 
 
 源代码安全扫描，可以使用sonarqube + findsecuritybugs插件
 
 
-DAST黑盒安全测试
+# DAST黑盒安全测试
 
 
-SCA开源组件安全扫描--Dependency Check是OWASP出品的开源组件安全扫描工具
+# SCA开源组件安全扫描--Dependency Check是OWASP出品的开源组件安全扫描工具
 
 
-容器安全扫描--Clair是CoreOS发布的开源容器漏洞静态分析工具，首先对镜像layer进行特征的提取，匹配CVE漏洞库，检测是否含有安全漏洞，侧重于扫描容器中的OS和应用的CVE漏洞
-
-
-
-MAST移动应用安全测试--MobSF是一款自动化移动APP安全测试工具，适用于iOS和Android，支持静态和动态分析。
+# 容器安全扫描--Clair是CoreOS发布的开源容器漏洞静态分析工具，首先对镜像layer进行特征的提取，匹配CVE漏洞库，检测是否含有安全漏洞，侧重于扫描容器中的OS和应用的CVE漏洞
 
 
 
-安全加固--安全配置基线可以参考CIS Benchmark
-
-
-漏洞管理--OWSAP DefectDojo是一款漏洞管理的开源工具，支持导入多种开源或商业安全工具的扫描结果，如Clair、Dependency Check、Harobr、MobSF、Sonarqbue、Zap等，实现在一个平台上对项目所有漏洞的集中化管理
-
-
-RASP运行时应用安全保护技术--OpenRASP是百度安全推出的一款开源的应用运行时自我保护产品
+# MAST移动应用安全测试--MobSF是一款自动化移动APP安全测试工具，适用于iOS和Android，支持静态和动态分析。
 
 
 
-应用资产安全风险感知--kibana实现资产的可视化展示
+# 安全加固--安全配置基线可以参考CIS Benchmark
 
 
-威胁监控
+# 漏洞管理--OWSAP DefectDojo是一款漏洞管理的开源工具，支持导入多种开源或商业安全工具的扫描结果，如Clair、Dependency Check、Harobr、MobSF、Sonarqbue、Zap等，实现在一个平台上对项目所有漏洞的集中化管理
+
+
+# RASP运行时应用安全保护技术--OpenRASP是百度安全推出的一款开源的应用运行时自我保护产品
+
+
+
+# 应用资产安全风险感知--kibana实现资产的可视化展示
+
+
+# 威胁监控
 
 
 可以基于ELK等开源技术，实现初级的SOC平台。网络流量监控采用suricata和zeek，规则采用ET开源规则库。各种日志、告警数据通过logstash采集入ES库，再通过kibana进行可视化展示
