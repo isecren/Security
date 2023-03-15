@@ -16,4 +16,9 @@ SAST源代码安全扫描
 源代码安全扫描，可以使用sonarqube + findsecuritybugs插件
 DAST黑盒安全测试
 SCA开源组件安全扫描--Dependency Check是OWASP出品的开源组件安全扫描工具
+容器安全扫描--Clair是CoreOS发布的开源容器漏洞静态分析工具，首先对镜像layer进行特征的提取，匹配CVE漏洞库，检测是否含有安全漏洞，侧重于扫描容器中的OS和应用的CVE漏洞
+MAST移动应用安全测试--MobSF是一款自动化移动APP安全测试工具，适用于iOS和Android，支持静态和动态分析。
+安全加固--安全配置基线可以参考CIS Benchmark
+漏洞管理--OWSAP DefectDojo是一款漏洞管理的开源工具，支持导入多种开源或商业安全工具的扫描结果，如Clair、Dependency Check、Harobr、MobSF、Sonarqbue、Zap等，实现在一个平台上对项目所有漏洞的集中化管理
+RASP运行时应用安全保护技术
 
