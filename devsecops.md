@@ -72,3 +72,33 @@ Threat dragon采用STRIDE威胁分析方法。STRIDE从攻击者角度，把威�
 
 
 
+# DevSecOps理念及思考
+https://mp.weixin.qq.com/s/_jBmFdtyXY5D_YrrTUP1iQ
+
+从目前业界的最佳实践来看，这其中主要包括几个关键的东西：持续集成（Continuous Integration，俗称“CI”）、持续交付（Continuous Delivery，俗称“CD”）、微服务（Microservices）、自动化测试、基础设施即代码（Infrastructureas Code，俗称“IaC”，又隐含包括了虚拟化、容器、自动编排、配置即代码等技术和理念）、监控和日志记录（Monitoring and Logging）等。业界围绕DevOps已经形成了一系列的工具集合和解决方案
+
+
+SDL(security  development lifecycle) 安全开发生命周期
+
+![image](https://user-images.githubusercontent.com/7948479/231744048-e0ed8cb9-5553-4095-84de-12b43c1d3ebe.png)
+
+完全遵循DevOps的思想，将安全无缝集成到其中，使之升级成为DevSecOps
+![image](https://user-images.githubusercontent.com/7948479/231745561-bba22ea9-3c69-4326-8e31-85fd46cfa8bd.png)
+
+devsecops原则
+1          安全左移
+关注研发流程的“左”边，在更早的环节中（设计、编码、自动测试）也要进行安全介入和管控
+需求和架构设计中的快速安全评估机制以及简易威胁建模方法论和工具集
+2          默认安全
+3          运行时安全
+运行时应用自我保护（RASP，Runtime Application Self-Protection）技术
+4          【安全服务自动化/自助化（Security as Code/Pipeline）】
+5           【利用基础设施即代码（IaC）】
+6            【利用持续集成和交付】
+7           【需要组织和文化建设】
+
+devsecops实践
+![image](https://user-images.githubusercontent.com/7948479/231747563-dde74113-f2db-4209-99dc-bfc26b563fe5.png)
+
+
+
