@@ -113,7 +113,180 @@ FindSecurityBugs/snyk/codeql
 【Verify（测试/验证）】
 自动化测试
 sast(static application security test)静态应用安全测试，针对源代码   ----白盒测试
-常见的工具Coverity、Checkmarx、FindBugs等，比较新的CodeQL和ShiftLeft inspect
-dast(dynamic application security test)动态应用程序安全测试，
+常见的工具Coverity、Checkmarx、FindBugs等，比较新的CodeQL和ShiftLeft inspect、sonarqube + findsecuritybugs
+dast(dynamic application security test)动态应用程序安全测试  ----黑盒测试
+常见的工具Web应用商业和开源的AcunetixWVS，长亭科技X-Ray、w3af等
+iast(interactive application security testing)交互式应用程序安全测试
+常见的工具ShiftLeft protect、百度的openrasp-iast
+sca(software composition analysis)软件成分分析，中间件扫描
+常见的工具Dependency Check是OWASP出品的开源组件安全扫描工具
+
+
+【Preprod（预发布）】
+Fuzzing/集成测试
+
+【Release（发布）】
+软件签名
+
+【Prevent（预防）】
+签名验证
+完整性检查
+纵深防御措施----采用分层的方式，使用独立的一个个措施来层层的进行防御。是安全建设领域广泛采用的一种思路
+
+【Detect（检测）】
+rasp（runtime application self-protetection）运行时应用自我保护，自动化的实时监控、检测或阻断实际产生的安全攻击，使应用程序具备自我保护能力
+常用的工具百度的OpenRASP
+ueba/网络监控（user and entity behavior analytics）用户和实体行为分析，通过对用户以及系统实体在数据层面的异常行为利用机器学习的方法来发现网络安全、IT办公安全、内外部的业务安全等风险，如数据泄露、入侵、内部滥用等的安全问题。在安全领域，异常分析是一个最重要的能力
+渗透测试
+攻防演练和不断的渗透
+
+
+Respond（响应）
+安全编排自动化和响应（soar,security orchestration,automation and response）
+安全编排与自动化soa/安全事件响应平台sirp/威胁情报平台tip
+
+【Predict（预测）】
+漏洞相关性分析，软件漏洞管理Application VulnerabilityCorrelation（AVC）
+威胁情报
+高级持续性威胁（Advanced Persistent Threat，APT）
+
+
+【Adapt（适应）】
+
+
+DevSecOps工具链
+【Plan（需求和设计）】
+•         公司安全规范/安全评估/威胁建模
+
+•         安全培训
+
+•         编码安全规范
+
+
+
+【Create（编码/编译）】
+•         安全开发库
+
+•         安全相关的基础设施&框架机制
+
+•         IDE中的代码质量工具
+
+•         代码review
+
+•         安全加固的统一编译构建环境
+
+•         安全加固的腾讯软件源
+
+
+
+【Verify（测试/验证）】
+
+
+【Preprod（预发布）】
+•         SAST 静态代码扫描“啄木鸟”
+
+•         内部开源代码自动安全检查
+
+•         DAST “洞犀”/“金刚”
+
+•         IAST “洞犀”
+
+–        结合流量代理技术
+
+–        结合RASP和DAST技术
+
+•         APP加固
+
+•         Fuzzing
+
+–        团队持续关注适时启动，reisk在《Fuzzing平台建设的研究与设计》与《持续Fuzzing在DevSecOps中的应用》中思考了很多，不再赘述。
+
+•         混沌工程
+
+
+
+【Release（发布）】
+•         后台服务发布，安全加固的统一服务发布平台
+
+•         APP发布，证书和软件签名/发布
+
+•         镜像安全扫描
+
+•         安全加固的腾讯tlinux内核
+
+
+
+【Prevent（预防）】
+•         安全可追溯的运维访问
+
+•         零信任安全网关
+
+
+
+【Detect（检测）】
+•         网络流量安全分析
+
+–        相关内容《流量分析在安全攻防上的探索实践》一文对部分工作做了很好的说明
+
+•         洞犀-上线后安全扫描
+
+–        高危服务：针对内外网上的高危服务（如可被直接入侵、数据泄露等）进行全端口的持续监测，对于其中可蠕虫可入侵类的风险提供30秒内的发现能力。部分机房的外网开放风险可“一键防护”（基于宙斯盾的阻断能力），帮助运维同学快速的临时止损。参见《拥抱DevOps-“洞犀”高危服务扫描方案》
+
+–        Web漏洞：会有大量的Web业务并不进行上线前的安全扫描，因此洞犀系统会对外网所有的Web请求进行采集、去脏、去重等处理，识别出有效的CGI及参数（从万亿提取出百万量级CGI）。通过替换内置账号登录态（包括QQ、微信等）来发起安全扫描。
+
+•         金刚-上线后安全扫描
+
+–        也会有公司App不在上线之前做安全扫描，因此金刚系统与应用宝合作，会自动拉取公司的App进行安全扫描并跟进漏洞处理完成。有个外部可用的金刚服务可供测试。
+
+•         洋葱（入侵检测系统）
+
+–        利用公司服务器母盘中洋葱Agent采集到的进程、连接、可疑文件等信息，外加网络流量中的信息，采用专家规则和UEBA方式来发现入侵行为，是公司反入侵领域最强大的基石系统。部分内容参考《披荆斩棘：论百万级服务器反入侵场景的混沌工程实践》
+
+•         RASP方案TRASP
+
+–        通过分析应用的运行行为以及上下文来发现Web应用安全威胁，并精准定位到漏洞源，由于与应用融为一体，可实时监测、阻断攻击，使应用自身拥有自保护的能力。可以实时检测发现针对web系统的各类入侵行为，包括SQL注入、命令注入、任意文件上传、任意文件读取、代码执行等。
+
+•         腾讯安全应急响应中心（TSRC）漏洞奖励计划
+
+–        提供资金激励吸引外部安全研究人员帮助腾讯发现更多潜在安全风险和漏洞
+
+–        提供其他公司快速搭建SRC平台的 开源版本以及 SaaS版本，目前已经有10+知名公司使用
+
+•         腾讯蓝军渗透测试
+
+–        内容敏感不列出，持续进行。
+
+–        获pony点赞《【原创】腾讯有个技术军团，“疯起来”连自己都打》，更多公开信息见lake的《网络空间安全时代的红蓝对抗建设》，蓝军领队wqzhong的《以攻促防：企业蓝军建设思考》
+
+
+
+【Respond（响应）】
+•         安全事件应急响应小组
+
+–        7*24小时安全事件应急响应，第一时间响应，降低或消除事件影响
+
+•         宙斯盾（DDoS防护）
+
+–        见文章《军备竞赛：DDoS攻击防护体系构建》《浅谈DDoS攻防对抗中的AI实践》
+
+•         门神（WAF）
+
+–        见文章《WAF建设运营及AI应用实践》
+
+
+
+【Predict（预测）】
+•         安全服务中心
+
+•         安全事件工单系统
+
+•         威胁情报：TSRC安全情报平台，主动及时感知外部安全情报
+
+–        提供100+知名软件的官方更新情报，5分钟内发现，30+外部公司使用
+
+
+
+Adapt（适应）
+•         待实践
 
 
