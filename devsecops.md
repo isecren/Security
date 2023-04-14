@@ -101,4 +101,19 @@ devsecops实践
 ![image](https://user-images.githubusercontent.com/7948479/231747563-dde74113-f2db-4209-99dc-bfc26b563fe5.png)
 
 
+【Plan（需求和设计）】
+威胁建模方法论\checklist\安全知识库
+开源的威胁建模工具，有微软提供的威胁建模工具threat modeling tool，OWASP 的桌面和web版本的威胁建模工具Threat Dragon
+
+
+【Create（编码/编译）】
+ide安全扫描插件
+FindSecurityBugs/snyk/codeql
+
+【Verify（测试/验证）】
+自动化测试
+sast(static application security test)静态应用安全测试，针对源代码   ----白盒测试
+常见的工具Coverity、Checkmarx、FindBugs等，比较新的CodeQL和ShiftLeft inspect
+dast(dynamic application security test)动态应用程序安全测试，
+
 
