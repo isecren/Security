@@ -22,6 +22,22 @@
 ![image](https://user-images.githubusercontent.com/7948479/223408736-af1db1ab-0c39-4d76-b32d-12451a7fb832.png)
 
 
+# 隐私计算
+![image](https://user-images.githubusercontent.com/7948479/233823952-1da2a21e-501c-45d4-96e9-5ffb4120ad66.png)
+
+1、数据集市和数据安全发布体系
+
+数据持有方系统节点
+数据需求方系统节点
+各节点均部署自己的协同计算节点，用于进行多方安全计算、联邦学习计算和隐私增强计算等服务。
+
+2、协同计算节点
+
+多方安全计算服务 MPC
+
+
+
+
 成熟数据安全技术
 以数据为中心的审计和防护-DCAP
 数据库审计和保护 DAP
