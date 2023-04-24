@@ -1,5 +1,6 @@
 # DEVSECOPS
 需求设计-----研发------测试-------预发布-------运维---------事件---------优化+分析
+plan---create---verify--preprod---release---prevent---detect----response---predict---adapt 
 # 安全设计  威胁建模
 开源的威胁建模工具，有微软提供的威胁建模工具threat modeling tool，OWASP 的桌面和web版本的威胁建模工具Threat Dragon
 
