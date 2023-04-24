@@ -1,0 +1,2 @@
+# 获取包名/类名
+adb shell dumpsys window | grep mCurrentFocus
