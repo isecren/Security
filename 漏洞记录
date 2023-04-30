@@ -29,12 +29,22 @@ copy public key as PEM 对其base64编码
 3、点击new symmetric key 点generate 并替换K的值为pem编码后的值
 4、回到请求体jwt，进行sign签名
 
-算法RS256更改为HS256
-获取 public.pem
-openssl s_client -connect hostname:443
-服务器证书输出复制到一个文件cert.pem
-openssl x509 -in cert.pem -pubkey -noout > public.pem
-jwt_tools.py jwt_token -S hs256 -k public.pem
-jwt_tools.py jwt_token -S hs256 -k public.pem -T
 标头参数住入
+Jwk 注入
+jwt editor keys插件
+New rsa KEY generate
+回到请求体jwt，attack embedded jwk
+Jku 
+jwt editor keys插件
+1、生成一个RSA密钥 copy public key as jwk
+2、创建一个webserver URL http://xxxx.xxx/jwk
+3、回到请求体jwt，修改kid，添加jku,替换sub
+kid 注入
+jwt editor keys插件
+1、生成new symmetric key generate
+2、对称密钥 k值覆盖为null (base64编码)
+3、回到请求体jwt，修改kid的值为../../../../../../dev/null
+4、修改sub,点击 sign 签名
+
+
 
