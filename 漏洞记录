@@ -18,10 +18,16 @@ jwt_tools.py jwt-token -X a
 jwt_tools.py jwt_token -C -d jwt_secrets.txt
 echo jwt_token > jwt_file
 hashcat -a 0 -m 16500 jwt_file  jwt_secrets --force
-替换攻击
+
+算法混淆攻击 RSA->HS256
 构造jwt
 jwt editor keys插件
-https://xzfile.aliyuncs.com/media/upload/picture/20221126102128-0877fd4a-6d31-1.png
+1、获取公钥 public key
+/jwks.json  /.well-known/jwks.json等
+2、JWT Editor Keys 点击 NEW RSA KEY，复制jwks.json种key的值到jwk框，点击ok
+copy public key as PEM 对其base64编码
+3、点击new symmetric key 点generate 并替换K的值为pem编码后的值
+4、回到请求体jwt，进行sign签名
 
 算法RS256更改为HS256
 获取 public.pem
