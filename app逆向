@@ -6,3 +6,13 @@ adb shell dumpsys window | grep mCurrentFocus
 2、重命名 证书文件路径.pem重命名为hash值.0
 3、把重命名后的文件放到android里面的/system/etc/security/cacerts/目录下
 备注：手机需root
+Read-only file system这个警告，这是因为system文件为只读，需要将其挂载为可读写
+mount -o rw,remount /system
+修改system读写权限，然后再进行复制操作
+修改了之后还是提示Read-only file system，还有方法
+adb root
+adb disable-verity
+adb reboot #手机会重启，不用关闭cmd窗口，手机可能需要拔掉数据写重新连接
+adb root
+adb shell 
+mount -o rw,remount /system    #再次进行修改
