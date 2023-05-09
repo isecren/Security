@@ -1,2 +1,8 @@
 # 获取包名/类名
 adb shell dumpsys window | grep mCurrentFocus
+
+# android version 7 及以上 https证书安装
+1、openssl x509 -subject_hash_old -in 证书文件路径.pem（charles/bp等） 获取hash值
+2、重命名 证书文件路径.pem重命名为hash值.0
+3、把重命名后的文件放到android里面的/system/etc/security/cacerts/目录下
+备注：手机需root
