@@ -1,3 +1,4 @@
+# APP逆向
 # 获取包名/类名
 adb shell dumpsys window | grep mCurrentFocus
 
@@ -16,3 +17,9 @@ adb reboot #手机会重启，不用关闭cmd窗口，手机可能需要拔掉�
 adb root
 adb shell 
 mount -o rw,remount /system    #再次进行修改
+
+activity 活动
+activity 组件导出的方式，主要是exported的值，为true时表示可以导出
+activity中exported默认值
+1、没有intent-filter时，exported默认为false
+2、有intent-filter时，exported默认为true
