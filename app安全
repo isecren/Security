@@ -18,8 +18,12 @@ adb root
 adb shell 
 mount -o rw,remount /system    #再次进行修改
 
-activity 活动
+activity 活动  [broadcast receive/service]
 activity 组件导出的方式，主要是exported的值，为true时表示可以导出
 activity中exported默认值
 1、没有intent-filter时，exported默认为false
 2、有intent-filter时，exported默认为true
+
+content provider exported的默认值
+1、minsdkversion/targetsdkversion小于=16时，默认为true
+2、minsdkversion/targetsdkversion大于=17时，默认为false
