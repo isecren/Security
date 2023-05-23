@@ -115,7 +115,7 @@ FindSecurityBugs/snyk
 【Verify（测试/验证）】
 自动化测试
 sast(static application security test)静态应用安全测试，针对源代码   ----白盒测试
-常见的工具Coverity、Checkmarx、FindBugs等，比较新的CodeQL和ShiftLeft inspect、sonarqube + findsecuritybugs
+常见的工具Coverity、Checkmarx、FindBugs等，比较新的CodeQL和ShiftLeft inspect、sonarqube + findsecuritybugs  Fortify
 dast(dynamic application security test)动态应用程序安全测试  ----黑盒测试
 常见的工具Web应用商业和开源的AcunetixWVS，长亭科技X-Ray、w3af等
 iast(interactive application security testing)交互式应用程序安全测试
