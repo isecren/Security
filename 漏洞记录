@@ -1,5 +1,5 @@
 # 思路
-subfinder 子域探测
+subfinder/amass 子域探测
 httpx 进行HTTP测试
 paramspider/arjun 参数测试
 
