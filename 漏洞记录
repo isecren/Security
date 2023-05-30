@@ -1,6 +1,16 @@
 # 思路
 subfinder/amass 子域探测
+https://search.censys.io/
+https://www.shodan.io/
+
+
 httpx 进行HTTP测试
+模糊测试
+当我开始对目录进行模糊测试时，不管状态代码是 200,404 还是 403。大多数时候 Gems 都在这些页面内。
+ffuf 工具
+模糊测试列表：
+/jenkins/script
+
 paramspider/arjun 参数测试
 eyewitness 检测url，自动屏幕截图
 waybackurls -dates http://xxxx/xxx.php   存档数据
