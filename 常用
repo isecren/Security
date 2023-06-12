@@ -1,1 +1,1 @@
-
+rsync --progress --partial --rsh="ssh" ./local_file user@remote_ip:/root/hisdbs
