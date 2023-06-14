@@ -1,2 +1,8 @@
 # 断点续传文件，将本地文件拷贝到远程服务器（使用非默认端口号)
 rsync --progress --partial --rsh="ssh" ./local_file user@remote_ip:/root/hisdbs
+rsync -avz -e "sftp -oIdentityFile=~/.ssh/id_rsa" user@remote:/home/user/dir .
+
+# 
+rsync -avz -e "sftp -oIdentityFile=~/.ssh/id_rsa" user@remote:/home/user/dir .
+
+lftp -e "mirror -c --skip-existing /home/user/dir; quit" -u user,sftp://remote
