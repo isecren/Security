@@ -50,6 +50,9 @@ try base64 encode.
 原型污染是一种javascript漏洞，攻击者可以将任意属性添加到全局变量原型，然后这些属性可能被用户定义的对象继承。
 
 # jwt 
+bypass 绕过验证
+CVE-2023-30845 通过使用 X-HTTP-Method-Override 请求标头绕过 JWT 检查！
+https://pbs.twimg.com/media/FyvL9dSX0AAuqzb?format=jpg&name=medium
 未经验证的签名--忘记验证签名了
 越权漏洞等
 
