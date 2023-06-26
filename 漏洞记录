@@ -7,6 +7,9 @@ Ssl.cert.subject.cn:"sub.target.com" 200
 
 
 httpx 进行HTTP测试
+httpx -l allDomains.txt -o liveDomains.txt 
+httpx -l liveDomains.txt -srd subsScreens -ss  屏幕截图
+
 模糊测试
 当我开始对目录进行模糊测试时，不管状态代码是 200,404 还是 403。大多数时候 Gems 都在这些页面内。
 ffuf 工具
