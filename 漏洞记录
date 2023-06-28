@@ -28,6 +28,7 @@ waybackurls -dates http://xxxx/xxx.php   存档数据
 SQL 工具
 sqlmap/ghauri
 payloads
+OR 1=1 --
 XOR(if(now()=sysdate(),sleep(9),0))XOR\"Z
 
 
