@@ -161,3 +161,16 @@ $’https://<NODE-IP:8888>/'
 如果ETCD可以匿名访问，您可能需要使用etcdctl工具。以下命令将获取存储的所有密钥：
 etcdctl –endpoints=http://<MASTER-IP>:2379 get / –prefix –keys-only
 3、检查Kubelet（只读端口）信息暴露情况
+
+# bypass waf
+alert = window[“al”+“ert”]。通过将“alert”关键字分成两部分并使用串联，我们可以避开 WAF 可能使用的简单关键字过滤器
+用这个 `` 绕过括号 ()
+用正斜杠 (/) 替换空格。此更改有助于避免 WAF 过滤器检测到可能寻找特定字符组合的情况
+对符号进行编码是绕过 WAF 保护的重要组成部分。以下是该技术中使用的符号编码：
+< 编码为 %3c
+> 编码为 %3e
+“ 编码为 %22
+[ 编码为 %5b
+] 编码为 %5d
+` 编码为 %60
+未编码有效负载：<svg/onload=window[“al”+”ert”]`1337`>
