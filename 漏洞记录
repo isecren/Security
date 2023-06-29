@@ -175,3 +175,6 @@ alert = window[“al”+“ert”]。通过将“alert”关键字分成两部�
 ] 编码为 %5d
 ` 编码为 %60
 未编码有效负载：<svg/onload=window[“al”+”ert”]`1337`>
+
+# IDOR 不安全直接对象引用
+需要两个账号进行测试
