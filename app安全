@@ -17,6 +17,10 @@ adb reboot #手机会重启，不用关闭cmd窗口，手机可能需要拔掉�
 adb root
 adb shell 
 mount -o rw,remount /system    #再次进行修改
+adb shell settings put global http_proxy localhost:3333
+adb reverse tcp:3333 tcp:8082
+
+
 
 activity 活动  [broadcast receive/service]
 activity 组件导出的方式，主要是exported的值，为true时表示可以导出
