@@ -178,3 +178,7 @@ alert = window[“al”+“ert”]。通过将“alert”关键字分成两部�
 
 # IDOR 不安全直接对象引用
 需要两个账号进行测试
+
+# 敏感信息泄露
+1、发现敏感信息-key
+2、进行 Google 搜索 使用键名后跟术语“api docs curl”进行 Google 搜索，发现API接口
