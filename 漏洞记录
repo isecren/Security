@@ -4,6 +4,14 @@ https://search.censys.io/
 https://www.shodan.io/
 Shodan Dork：
 Ssl.cert.subject.cn:"sub.target.com" 200
+google / duckduckgo.com
+site:blog.intigriti.com csrf
+site:pentester.land csrf
+site:book.hacktricks.xyz csrf
+site:cloud.hacktricks.xyz csrf
+site:hackerone.com/reports csrf
+site:infosecwriteups.com csrf
+
 
 
 httpx 进行HTTP测试
