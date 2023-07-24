@@ -11,7 +11,7 @@ site:book.hacktricks.xyz csrf
 site:cloud.hacktricks.xyz csrf
 site:hackerone.com/reports csrf
 site:infosecwriteups.com csrf
-site:portswigger.net Cheat sheet
+site:portswigger.net Cheatsheet
 
 
 
