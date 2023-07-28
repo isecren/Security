@@ -13,6 +13,17 @@ site:hackerone.com/reports csrf
 site:infosecwriteups.com csrf
 site:portswigger.net Cheatsheet
 
+# Tools
+burpsuite extender
+turbo intruder
+authorize
+paraminer
+activescan++
+inmap
+e-mas
+
+Gau
+
 
 
 httpx 进行HTTP测试
