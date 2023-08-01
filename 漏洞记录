@@ -14,13 +14,9 @@ site:infosecwriteups.com csrf
 site:portswigger.net Cheatsheet
 
 # Tools
-burpsuite extender
-turbo intruder
-authorize
-paraminer
-activescan++
-inmap
-e-mas
+burpsuite
+git-dumper  git-dumper http://example.com/.git/ 输出
+Weevely - 武器化的 Web shell  weevely generate <password> <path>/weevely <URL> <password> [cmd]
 
 Gau
 
