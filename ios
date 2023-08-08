@@ -5,3 +5,12 @@ Cydia  包管理器
 AppSync 
 解密ios应用程序
 https://github.com/AloneMonkey/frida-ios-dump
+
+Keychain Data
+https://github.com/ptoomey3/Keychain-Dumper
+绕过SSL、证书锁定（frida）
+objection -g 'Application Name' explore
+ios sslpinning disable --quiet
+绕过越狱（frida）
+objection -g 'Application Name' explore
+ios jailbreak disable
