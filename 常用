@@ -6,3 +6,6 @@ rsync -avz -e "sftp -oIdentityFile=~/.ssh/id_rsa" user@remote:/home/user/dir .
 rsync -avz -e "sftp -oIdentityFile=~/.ssh/id_rsa" user@remote:/home/user/dir .
 
 lftp -e "mirror -c --skip-existing /home/user/dir; quit" -u user,sftp://remote
+
+# Error mounting /dev/sda2 at /media/isecren/hacker: Unknown error when mounting /dev/sda2
+修复：ntfsfix /dev/sda2 
