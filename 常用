@@ -9,3 +9,7 @@ lftp -e "mirror -c --skip-existing /home/user/dir; quit" -u user,sftp://remote
 
 # Error mounting /dev/sda2 at /media/isecren/hacker: Unknown error when mounting /dev/sda2
 修复：ntfsfix /dev/sda2 
+
+# 字节跳动-elkeid 安装部署注意事项
+1 免密码安装，服务器生成公私钥 ssh-keygen -t ras
+2 id_rsa.pub 内容放到 /root/.ssh/authorized_keys
