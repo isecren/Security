@@ -14,6 +14,10 @@ site:infosecwriteups.com csrf
 site:weekly.infosecwriteups.com csrf
 site:portswigger.net Cheatsheet
 
+# NO nmap 
+linux/bash script
+for i in {1..254};do ping -c 1 -w 1 192.168.1.$i | grep from;done
+
 # Tools
 burpsuite
 git-dumper  git-dumper http://example.com/.git/ 输出
