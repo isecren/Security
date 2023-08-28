@@ -30,7 +30,7 @@ for i in {1..254};do ping -c 1 -w 1 192.168.1.$i | grep from;done
 history
 search info:grep -R -i pass /home/* 2>/dev/null
 bash version < 4.3
-shellshock
+shellshock  check cmd:
 env x='() { :; };echo "it is vulnerable"' bash -c date
 
 
