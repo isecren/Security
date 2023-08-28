@@ -14,6 +14,14 @@ site:infosecwriteups.com csrf
 site:weekly.infosecwriteups.com csrf
 site:portswigger.net Cheatsheet
 
+# nmap
+nmap -sn ip/idor
+nmap -sS/-sT --min-rate 10000 -p- ip -oA path
+grep open path | awk -F '/' '{print $1}' | paste -sd ','
+nmap  -sT -sV -sC -o -p+ports ip -oA path
+nmap -sT --script=vuln -p+ports ip -oA path
+nmap -sU --top-ports 20 ip -oA path
+
 # NO nmap 
 linux/bash script
 for i in {1..254};do ping -c 1 -w 1 192.168.1.$i | grep from;done
