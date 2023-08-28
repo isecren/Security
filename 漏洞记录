@@ -26,6 +26,10 @@ nmap -sU --top-ports 20 ip -oA path
 linux/bash script
 for i in {1..254};do ping -c 1 -w 1 192.168.1.$i | grep from;done
 
+#权限提升
+history
+search info:grep -R -i pass /home/* 2>/dev/null
+
 # Tools
 burpsuite
 git-dumper  git-dumper http://example.com/.git/ 输出
