@@ -19,7 +19,7 @@ nmap -sn ip/idor
 nmap -sS/-sT --min-rate 10000 -p- ip -oA path
 grep open path | awk -F '/' '{print $1}' | paste -sd ','
 nmap  -sT -sV -sC -o -p+ports ip -oA path
-nmap -sT --script=vuln -p+ports ip -oA path
+nmap -sS/-sT --script=vuln -p+ports ip -oA path
 nmap -sU --top-ports 20 ip -oA path
 
 # NO nmap 
