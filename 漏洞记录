@@ -25,8 +25,9 @@ nmap -sS/-sT --script=vuln -p+ports ip -oA path
 nmap -sU --top-ports 20 ip -oA path
 
 # service
+smb--445---smbmap/smbclient/crackmapexec/enum4linux
 nfs--------showmount -e  ip  / mount -t nfs ip:/path  filedir 
-ftp--------anonymous
+ftp---21-----anonymous
 
 
 # NO nmap 
