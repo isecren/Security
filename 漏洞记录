@@ -34,6 +34,12 @@ ftp---21-----anonymous
 linux/bash script
 for i in {1..254};do ping -c 1 -w 1 192.168.1.$i | grep from;done
 
+
+# SQL
+' or 1=1 -- -
+' and 1=1 -- -
+
+
 #权限提升
 history
 search info:grep -R -i pass /home/* 2>/dev/null
