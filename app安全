@@ -8,7 +8,7 @@ adb pull /data/app/apk包名/base.apk path/to/destination
 jadx-gui反编译apk
 检查androidmanifest.xml文件以识别可能的攻击面
 webviewactivity && exported = True
-https://miro.medium.com/1*Y_Q3s13SckiQUx0ABOTVcw.jpeg
+
 
 # 获取包名/类名
 adb shell dumpsys window | grep mCurrentFocus
