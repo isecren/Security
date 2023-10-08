@@ -10,6 +10,9 @@ jadx-gui反编译apk
 webviewactivity && exported = True
 测试
 adb shell am start -n "xxx.WebViewActivity" --es "key.url" "url的值"
+- n : Specifying "package_name/activity_name"
+— es : Specifying “extras_key” “extras_value”
+
 
 # 获取包名/类名
 adb shell dumpsys window | grep mCurrentFocus
