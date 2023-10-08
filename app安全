@@ -1,4 +1,9 @@
 # APP逆向
+识别应用程序的包名/获取包名位置/下载apk包
+adb shell pm list packages
+adb shell pm path apk包名
+adb pull /data/app/apk包名/base.apk path/to/destination
+
 # 获取包名/类名
 adb shell dumpsys window | grep mCurrentFocus
 
