@@ -8,7 +8,8 @@ adb pull /data/app/apk包名/base.apk path/to/destination
 jadx-gui反编译apk
 检查androidmanifest.xml文件以识别可能的攻击面
 webviewactivity && exported = True
-
+测试
+adb shell am start -n "xxx.WebViewActivity" --es "key.url" "url的值"
 
 # 获取包名/类名
 adb shell dumpsys window | grep mCurrentFocus
