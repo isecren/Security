@@ -282,3 +282,8 @@ alert = window[“al”+“ert”]。通过将“alert”关键字分成两部�
 # SSTI 
 payload: {{7*7}} 得到结果49 证明存在
 读取etc/passwd  {{system('cat /etc/passwd')}}
+
+路径遍历的根本原因是缺乏路径规范化
+os.path.normpath(path).startswith("/app/resources")
+注入漏洞的根本原因在于将数据视为代码
+将数据与代码分离并对输入执行上下文转义。这种技术的一个主要例子是参数化查询。它隔离数据库查询的输入并执行转义
