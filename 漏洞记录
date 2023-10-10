@@ -287,3 +287,6 @@ payload: {{7*7}} 得到结果49 证明存在
 os.path.normpath(path).startswith("/app/resources")
 注入漏洞的根本原因在于将数据视为代码
 将数据与代码分离并对输入执行上下文转义。这种技术的一个主要例子是参数化查询。它隔离数据库查询的输入并执行转义
+
+
+https://miro.medium.com/v2/resize:fit:1100/format:webp/1*GDKL1DE976OfNT-DQ99ZMg.png
