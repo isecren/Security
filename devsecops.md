@@ -117,7 +117,7 @@ devsecops实践
 
 【Create（编码/编译）】
 ide安全扫描插件
-FindSecurityBugs/snyk
+FindSecurityBugs/snyk/sonarlint
 
 【Verify（测试/验证）】
 自动化测试
