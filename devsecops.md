@@ -11,6 +11,9 @@
 plan---create---verify--preprod---release---prevent---detect----respond---predict---adapt 
 ![image](https://github.com/user-attachments/assets/c9dd2432-6e94-42e0-8a55-84506489f155)
 
+![image](https://github.com/user-attachments/assets/65eea148-f7db-42aa-9f2a-bb89e9700f7d)
+
+
 # 安全设计  威胁建模
 开源的威胁建模工具，有微软提供的威胁建模工具threat modeling tool，OWASP 的桌面和web版本的威胁建模工具Threat Dragon
 
