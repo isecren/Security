@@ -65,3 +65,12 @@ AI技术的应用安全
 2、基于优化的越狱攻击  这类攻击利用自动化算法来生成能够引发模型不良行为的提示
 LLM存在的风险：越狱、投毒、敏感信息泄露、注入攻击
 
+#  机器学习管道下的序列化
+漏洞存在于流行框架处理模型序列化和反序列化
+当你在其他框架中调用torch.load()或类似函数时，你实际上是在执行序列化文件中包含的任意代码
+def load_pretrained_model(model_path):
+    model = torch.load(model_path)
+    model.eval()
+    return model
+
+#  无人修补的内存映射攻击面
