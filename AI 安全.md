@@ -74,3 +74,8 @@ def load_pretrained_model(model_path):
     return model
 
 #  无人修补的内存映射攻击面
+
+
+# llm 
+1、LLM 可以访问哪些 API
+2、LLM Debug SQL API 接受哪些参数
